@@ -20,9 +20,14 @@ import {
     tesla,
     shopify,
     carrent,
+    messagespace,
+    yourplaces,
+    opentable,
     jobit,
     tripguide,
     threejs,
+    expo,
+    fullstack
 } from "../assets";
 
 export const navLinks = [
@@ -42,24 +47,28 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
-        icon: web,
+        title: "Frontend Developer",
+        icon: reactjs,
     },
     {
-        title: "React Native Developer",
-        icon: mobile,
+        title: "Mobile Developer",
+        icon: expo,
     },
     {
         title: "Backend Developer",
-        icon: backend,
+        icon: nodejs,
     },
     {
-        title: "Content Creator",
-        icon: creator,
+        title: "Full Stack Developer",
+        icon: fullstack,
     },
 ];
 
 const technologies = [
+    {
+        name: "React JS",
+        icon: reactjs,
+    },
     {
         name: "HTML 5",
         icon: html,
@@ -77,10 +86,6 @@ const technologies = [
         icon: typescript,
     },
     {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
         name: "Redux Toolkit",
         icon: redux,
     },
@@ -96,22 +101,15 @@ const technologies = [
         name: "MongoDB",
         icon: mongodb,
     },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
+
     {
         name: "git",
         icon: git,
     },
     {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
-        icon: docker,
-    },
+        name: 'React Native',
+        icon: expo
+    }
 ];
 
 const experiences = [
@@ -172,24 +170,24 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
+            "I thought it was impossible to make a website as beautiful as our product, but Yosef proved me wrong.",
+        name: "Noa Meltzer",
         designation: "CFO",
         company: "Acme Co",
         image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
+            "I've never met a web developer who truly cares about their clients' success like Yosef does.",
+        name: "Ofek Berkovich",
         designation: "COO",
         company: "DEF Corp",
         image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
         testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
+            "After Yosef optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        name: "Limor Cohen",
         designation: "CTO",
         company: "456 Enterprises",
         image: "https://randomuser.me/api/portraits/women/6.jpg",
@@ -198,51 +196,51 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Message-Space",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            `"MessageSpace'' is a WhatsApp management platform that helps companies optimize organizational processes.`,
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
+            },
+            {
+                name: "react-query",
+                color: "green-text-gradient",
+            },
+            {
+                name: "styled-components",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: messagespace,
+        source_code_link: "https://github.com/YosefHershberg/MessageSpace_App_Frontend",
+    },
+    {
+        name: "YourPlaces",
+        description:
+            `I created YourPlaces, a platform that allows users to share places and locations between travelers.`,
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "node",
+                color: "green-text-gradient",
             },
             {
                 name: "mongodb",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwind",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: yourplaces,
+        source_code_link: "https://github.com/YosefHershberg/places_app_new",
     },
     {
-        name: "Job IT",
+        name: "OpenTable Mock App",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: jobit,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Trip Guide",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            `I developed the "OpenTable Mock App," a restaurant reservation platform using NextJS, which was used for server-side rendering, caching and more.`,
         tags: [
             {
                 name: "nextjs",
@@ -253,12 +251,12 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "tailwind",
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: opentable,
+        source_code_link: "https://github.com/YosefHershberg/OpenTable_App",
     },
 ];
 

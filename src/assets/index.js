@@ -20,6 +20,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import expo from "./tech/expo.png"
+import fullstack from './tech/full-stack.png'
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -29,6 +31,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import messagespace from './messagespace.png'
+import yourplaces from './yourplaces.png'
+import opentable from './opentable.png'
 
 export {
   logo,
@@ -57,6 +62,11 @@ export {
   starbucks,
   tesla,
   carrent,
+  messagespace,
+  yourplaces,
+  opentable,
   jobit,
   tripguide,
+  expo,
+  fullstack
 };
