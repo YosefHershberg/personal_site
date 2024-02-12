@@ -1,8 +1,4 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
     javascript,
     typescript,
     html,
@@ -13,19 +9,13 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
     meta,
     starbucks,
     tesla,
     shopify,
-    carrent,
     messagespace,
     yourplaces,
     opentable,
-    jobit,
-    tripguide,
-    threejs,
     expo,
     fullstack
 } from "../assets";
