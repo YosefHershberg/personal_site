@@ -188,7 +188,7 @@ const projects = [
     {
         name: "Message-Space",
         description:
-            `"MessageSpace'' is a WhatsApp management platform that helps companies optimize organizational processes.`,
+            `"MessageSpace'' is a WhatsApp management platform that helps companies optimize organizational WhatsApp processes.`,
         tags: [
             {
                 name: "react",
@@ -209,7 +209,7 @@ const projects = [
     {
         name: "YourPlaces",
         description:
-            `I created YourPlaces, a platform that allows users to share places and locations between travelers.`,
+            `YourPlaces is a platform that allows users to share and discover places and locations between travelers.`,
         tags: [
             {
                 name: "react",
@@ -228,9 +228,9 @@ const projects = [
         source_code_link: "https://github.com/YosefHershberg/places_app_new",
     },
     {
-        name: "OpenTable Mock App",
+        name: "CodeSplainer",
         description:
-            `I developed the "OpenTable Mock App," a restaurant reservation platform using NextJS, which was used for server-side rendering, caching and more.`,
+            `This AI powered project is an app that helps new developers understand any code uploaded to github `,
         tags: [
             {
                 name: "nextjs",

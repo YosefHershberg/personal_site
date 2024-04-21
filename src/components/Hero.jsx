@@ -15,12 +15,12 @@ const Hero = () => {
             Hi, I am <span className='text-[#915EFF]'>Yosef</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Front End Software Engineer - <br className='sm:block hidden' />
-            experianced in developing user interfaces with React, TypeScript, CSS & REST API.
+            A Front End Software Engineer.<br className='sm:block hidden' />
+            experianced in developing user interfaces with React, TypeScript, CSS & REST API, in modern architecture, industry standarts and best practices.
           </p>
         </div>
       </div>
-      
+
       <ComputersCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
