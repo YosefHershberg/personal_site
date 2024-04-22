@@ -15,9 +15,9 @@ import {
     shopify,
     messagespace,
     yourplaces,
-    opentable,
     expo,
-    fullstack
+    fullstack,
+    codesplainer
 } from "../assets";
 
 export const navLinks = [
@@ -233,20 +233,20 @@ const projects = [
             `This AI powered project is an app that helps new developers understand any code uploaded to github `,
         tags: [
             {
-                name: "nextjs",
+                name: "tailwind",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "react-query",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "framer-motion",
                 color: "pink-text-gradient",
             },
         ],
-        image: opentable,
-        source_code_link: "https://github.com/YosefHershberg/OpenTable_App",
+        image: codesplainer,
+        source_code_link: "https://github.com/YosefHershberg/code_explain_app",
     },
 ];
 

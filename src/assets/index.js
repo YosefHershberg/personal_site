@@ -25,7 +25,7 @@ import tesla from "./company/tesla.png";
 
 import messagespace from './messagespace.png'
 import yourplaces from './yourplaces.png'
-import opentable from './opentable.png'
+import codesplainer from './codesplainer.png'
 
 export {
   logo,
@@ -49,8 +49,8 @@ export {
   tesla,
   messagespace,
   yourplaces,
-  opentable,
   expo,
   fullstack,
-  linkedin
+  linkedin,
+  codesplainer
 };
