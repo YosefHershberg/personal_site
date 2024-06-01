@@ -1,10 +1,11 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { styles } from '@/styles'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '@/hoc'
 import { slideIn } from '@/utils/motion'
+import { z } from 'zod'
 
 const Contact = () => {
   const formRef = useRef();
@@ -14,8 +15,10 @@ const Contact = () => {
     message: ''
   });
   const [loading, setLoading] = useState(false);
+  const [showError, setShowError] = useState(false);
 
   const handleChange = (e) => {
+    showError && setShowError(false);
     const { name, value } = e.target;
     setForm({
       ...form,
@@ -25,6 +28,13 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!contactFromSchema.safeParse(form).success) {
+      console.log(contactFromSchema.safeParse(form).error.errors[0].message);
+      setShowError(true);
+      return;
+    }
+
     setLoading(true);
 
     emailjs
@@ -110,7 +120,14 @@ const Contact = () => {
             />
           </label>
 
+          {showError &&
+            <div className='w-full items-center rounded-lg bg-danger-100 px-6 py-5 text-base text-danger-700 dark:bg-[#2c0f14] dark:text-danger-500'>
+              {contactFromSchema.safeParse(form).error.errors[0].message}
+            </div>
+          }
+
           <button
+            onClick={handleSubmit}
             type='submit'
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
@@ -131,3 +148,15 @@ const Contact = () => {
 };
 
 export default SectionWrapper(Contact, 'contact');
+
+const emailSchema = z.string().email("Invalid email address.");
+
+const nameSchema = z.string().min(3, 'Name must be at least 3 characters long.')
+
+const messageSchema = z.string().min(10, 'Message must be at least 3 characters long.')
+
+const contactFromSchema = z.object({
+  name: nameSchema,
+  email: emailSchema,
+  message: messageSchema
+})
