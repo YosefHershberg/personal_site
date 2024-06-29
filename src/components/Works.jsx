@@ -59,7 +59,15 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-3'>
+            {project.deploy_link && (
+              <div
+                onClick={() => window.open(project.deploy_link, "_blank")}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <p className='text-white font-bold'>Live</p>
+              </div>
+            )}
             <div
               onClick={() => window.open(project.source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'

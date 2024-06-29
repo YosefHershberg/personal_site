@@ -22,9 +22,9 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import messagespace from './messagespace.png'
 import yourplaces from './yourplaces.png'
 import codesplainer from './codesplainer.png'
+import culinarygpt from './culinaygpt.png'
 
 export {
   logo,
@@ -42,7 +42,6 @@ export {
   shopify,
   starbucks,
   tesla,
-  messagespace,
   yourplaces,
   expo,
   fullstack,
@@ -50,5 +49,6 @@ export {
   codesplainer,
   express,
   graphql,
-  restapi
+  restapi,
+  culinarygpt
 };

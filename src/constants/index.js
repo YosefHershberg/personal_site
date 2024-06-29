@@ -9,14 +9,14 @@ import {
     starbucks,
     tesla,
     shopify,
-    messagespace,
     yourplaces,
     expo,
     fullstack,
     codesplainer,
+    culinarygpt,
     express,
     graphql,
-    restapi
+    restapi,
 } from "../assets";
 
 export const navLinks = [
@@ -181,46 +181,26 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Message-Space",
+        name: "CulinaryGPT",
         description:
-            `"MessageSpace'' is a WhatsApp management platform that helps companies optimize organizational WhatsApp processes.`,
+            `"CulinaryGPT" is a AI Based application that helps users discover personalized dishes based on dietary preferences, ingredient availability, and nutritional requirements.`,
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "react-query",
-                color: "green-text-gradient",
-            },
-            {
-                name: "styled-components",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: messagespace,
-        source_code_link: "https://github.com/YosefHershberg/MessageSpace_App_Frontend",
-    },
-    {
-        name: "YourPlaces",
-        description:
-            `YourPlaces is a platform that allows users to share and discover places and locations between travelers.`,
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "node",
-                color: "green-text-gradient",
+                name: 'express',
+                color: 'green-text-gradient'
             },
             {
                 name: "mongodb",
                 color: "pink-text-gradient",
             },
         ],
-        image: yourplaces,
-        source_code_link: "https://github.com/YosefHershberg/places_app_new",
+        image: culinarygpt,
+        source_code_link: "https://github.com/YosefHershberg/culinary_gpt_app",
+        deploy_link: "https://culinary-gpt.vercel.app/",
     },
     {
         name: "CodeSplainer",
@@ -242,6 +222,28 @@ const projects = [
         ],
         image: codesplainer,
         source_code_link: "https://github.com/YosefHershberg/code_explain_app",
+        deploy_link: "https://code-explain-app.vercel.app/",
+    },
+    {
+        name: "YourPlaces",
+        description:
+            `YourPlaces is a platform that allows users to share and discover places and locations between travelers.`,
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "node",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: yourplaces,
+        source_code_link: "https://github.com/YosefHershberg/places_app_new",
     },
 ];
 
