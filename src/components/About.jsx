@@ -41,19 +41,35 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p
-        variants={
-          fadeIn('', '', 0.1, 1)
-        }
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I'm a front-end web developer experienced with React, CSS, TypeScript and REST API.
-        With ability to develop a web platform that helps big companies handle their WhatsApp groups
-        multi-functionally to optimize organizational processes. <br />
-        Ready for my next challenge in a company that is looking for a quick learner to develop its core application and find solutions to complex problems.
-      </motion.p>
+      <div className='w-full flex justify-center'>
+        <motion.p
+          variants={
+            fadeIn('', '', 0.1, 1)
+          }
+          className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        >
+          I'm a Full Stack web developer experienced with React, Node, Express, and MongoDB, with the ability to develop an AI-based recipe creation application that helps users discover personalized dishes based on dietary preferences, ingredient availability, and nutritional requirements.
+          I am ready for my next challenge in a company looking for a quick learner to develop its core applications and solve complex problems.
+          <br />
+          <br />
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+          As a technically sophisticated software developer, I have progressive experience in creating, coding, and improving both client-side and server-side applications to ensure a seamless application process. I specialize in building web architectures that ensure code reusability and maintainability.
+          <br />
+          <br />
+
+          As a creative problem solver, I can think 'outside the box' to resolve technical issues and enhance operational efficiency. I quickly understand and master new skills, techniques, and technologies, thriving in fast-paced environments. I excel at transforming product requirements into technical specifications while staying abreast of industry trends and best practices.
+          <br />
+          <br />
+
+          My expertise and commitment set me apart in a competitive industry. I am always seeking new challenges, and my dedication to excellence ensures that your business goals will be met quickly and efficiently. If you have any questions or would like to connect, please reach out.
+          <br />
+          <br />
+
+          Throughout my journey enhancing my full stack development skills, I have picked up many useful technologies across various domains, including front-end frameworks, back-end development, database management, API integration, state management tools, and unit testing. My curiosity and passion for full stack development continue to grow.
+        </motion.p>
+      </div>
+
+      <div className='mt-28 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

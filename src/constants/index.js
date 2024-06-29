@@ -1,11 +1,7 @@
 import {
     javascript,
     typescript,
-    html,
-    css,
     reactjs,
-    redux,
-    tailwind,
     nodejs,
     mongodb,
     git,
@@ -17,7 +13,10 @@ import {
     yourplaces,
     expo,
     fullstack,
-    codesplainer
+    codesplainer,
+    express,
+    graphql,
+    restapi
 } from "../assets";
 
 export const navLinks = [
@@ -60,12 +59,16 @@ const technologies = [
         icon: reactjs,
     },
     {
-        name: "HTML 5",
-        icon: html,
+        name: "Node JS",
+        icon: nodejs,
     },
     {
-        name: "CSS 3",
-        icon: css,
+        name: 'Express JS',
+        icon: express
+    },
+    {
+        name: "MongoDB",
+        icon: mongodb,
     },
     {
         name: "JavaScript",
@@ -76,22 +79,13 @@ const technologies = [
         icon: typescript,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
+        name: "GraphQL",
+        icon: graphql,
     },
     {
-        name: "Tailwind CSS",
-        icon: tailwind,
+        name: "REST API",
+        icon: restapi,
     },
-    {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-
     {
         name: "git",
         icon: git,
@@ -99,7 +93,8 @@ const technologies = [
     {
         name: 'React Native',
         icon: expo
-    }
+    },
+    
 ];
 
 const experiences = [
