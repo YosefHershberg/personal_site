@@ -35,7 +35,7 @@ const About = () => {
   return (
     <>
       <motion.div
-        // variants={textVariant()}
+        variants={textVariant()}
       >
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -43,9 +43,9 @@ const About = () => {
 
       <div className='w-full flex justify-center'>
         <motion.p
-          // variants={
-          //   fadeIn('', '', 0.1, 1)
-          // }
+          variants={
+            fadeIn('', '', 0.1, 1)
+          }
           className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           I'm a Full Stack web developer experienced with React, Node, Express, and MongoDB, with the ability to develop an AI-based recipe creation application that helps users discover personalized dishes based on dietary preferences, ingredient availability, and nutritional requirements.
