@@ -48,8 +48,9 @@ const About = () => {
           }
           className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          I'm a Full Stack web developer experienced with React, Node, Express, and MongoDB, with the ability to develop an AI-based recipe creation application that helps users discover personalized dishes based on dietary preferences, ingredient availability, and nutritional requirements.
-          I am ready for my next challenge in a company looking for a quick learner to develop its core applications and solve complex problems.
+          I'm Yosef, a Full Stack web developer experienced with React, Node, Express, and MongoDB.
+          <br />
+          I have the ability to develop an AI-based recipe creation application that helps users discover personalized dishes based on dietary preferences, ingredient availability, and nutritional requirements. I am ready for my next challenge in a company looking for a quick learner to develop its core applications and solve complex problems.
           <br />
           <br />
 
